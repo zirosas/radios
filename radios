@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# radios — TUI launcher (runs the Python/Textual app in the project venv)
+DIR="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")" && pwd)"
+exec "$DIR/.venv/bin/python" "$DIR/radios.py" "$@"
